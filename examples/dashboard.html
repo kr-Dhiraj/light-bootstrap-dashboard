@@ -412,6 +412,37 @@
             </footer>
         </div>
     </div>
+    <!-- Onboarding Modal -->
+    <div class="modal fade" id="onboardingModal" tabindex="-1" role="dialog" aria-labelledby="onboardingTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="onboardingTitle">Welcome to the Dashboard</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-2">Here are a few tips to get you started:</p>
+                    <ul class="mb-0">
+                        <li>Use the sidebar to navigate between pages.</li>
+                        <li>Check the charts for quick insights.</li>
+                        <li>Visit Notifications to see recent updates.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-check mr-auto">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="onboardingDontShow"> Don't show again
+                            <span class="form-check-sign"></span>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info" id="onboardingGetStarted" data-dismiss="modal">Got it</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--   -->
     <!-- <div class="fixed-plugin">
     <div class="dropdown show-dropdown">
@@ -508,6 +539,7 @@
 <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
 <script src="../assets/js/demo.js"></script>
+<script src="../assets/js/onboarding.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         // Javascript method's body can be found in assets/js/demos.js
